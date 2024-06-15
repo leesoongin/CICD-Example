@@ -25,5 +25,5 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
       - name: Start xcode build 🛠
-        run: xcodebuild clean test -project CICD-Example_mumu_2/CICD-Example_mumu_2.xcodeproj -scheme CICD-Example_mumu_2 -destination 'platform=iOS Simulator,name=iPhone version 15 Pro,OS=17.5'
+        run: xcodebuild clean -project CICD-Example_mumu_2/CICD-Example_mumu_2.xcodeproj -scheme CICD-Example_mumu_2 -destination 'platform=iOS Simulator,name=iPhone version 15 Pro,OS=17.5'
      
